@@ -23,3 +23,24 @@ create table Fishes(breed varchar(20) Default "GoldFish",color varchar(20) Defau
 desc Fishes;
 insert into Fishes()values(),(),();
 select * from Fishes;
+
+-- Primary Key
+
+create table Birds(batch_id int,breed varchar(20),price int,Primary key(batch_id));
+desc Birds;
+insert into Birds(batch_id,breed,price)values(1,"Sparrow",200),(2,"parrot",500),(3,"macao",5000);
+select * from Birds;
+
+-- Primary Key OR
+
+-- create table Birds(batch_id int Primary key,breed varchar(20),price int);
+-- desc Birds;
+-- insert into Birds(batch_id,breed,price)values(1,"Sparrow",200),(2,"parrot",500),(3,"macao",5000);
+-- select * from Birds;
+
+-- Auto Increment
+
+create table Employee(emp_id int Auto_Increment Primary key,name varchar(20),salary int);
+desc Employee;
+insert into Employee(name,salary)values("varad",4500),("sahil",5500),("rohan",5000);
+select * from Employee;
